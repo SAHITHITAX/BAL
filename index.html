@@ -119,7 +119,7 @@ async function fetchData() {
             let whatsappClientLink = '#';
             let clientDisabledAttr = 'disabled';
             if (phone.length >= 10) {
-                const message = encodeURIComponent(`Hi ${name}, Balance of Rs.${remark} pending against your complted work: ${work}. Payment Details                                   Gpay No.  8499994485.                                                               Name : Alekhya.                                                                 A/c No.129412010002018                                                              IFSC Code. UBIN0812943                                              UPI id. sahithitaxconsultancy-2@okaxis`);
+                const message = encodeURIComponent(`Hi ${name}, Balance of *Rs.${remark} pending* against your complted work: ${work}. Payment Details                                   Gpay No.  *8499994485*.                                                               Name : Alekhya.                                                                 A/c No.129412010002018                                                              IFSC Code. UBIN0812943                                              UPI id. sahithitaxconsultancy-2@okaxis`);
                 whatsappClientLink = `https://wa.me/${phone}?text=${message}`;
                 clientDisabledAttr = '';
             }
@@ -128,7 +128,7 @@ async function fetchData() {
             let whatsappAssigneeLink = '#';
             let assigneeDisabledAttr = 'disabled';
             if (assignPhone.length >= 10) {
-                const message = encodeURIComponent(`Hi ${assign}, Balance of Rs.${remark} pending against your complted work: ${work} for ${name}`);
+                const message = encodeURIComponent(`Hi ${assign}, Balance of *Rs.${remark}* *pending* against your complted work: ${work} for ${name}`);
                 whatsappAssigneeLink = `https://wa.me/${assignPhone}?text=${message}`;
                 assigneeDisabledAttr = '';
             }
