@@ -119,7 +119,7 @@ async function fetchData() {
             let whatsappClientLink = '#';
             let clientDisabledAttr = 'disabled';
             if (phone.length >= 10) {
-                const message = encodeURIComponent(`Hi ${name}, Regarding your pending work: ${work}`);
+                const message = encodeURIComponent(`Hi ${name}, Balance of Rs.${remark} pending against your complted work: ${work}`);
                 whatsappClientLink = `https://wa.me/${phone}?text=${message}`;
                 clientDisabledAttr = '';
             }
@@ -128,7 +128,7 @@ async function fetchData() {
             let whatsappAssigneeLink = '#';
             let assigneeDisabledAttr = 'disabled';
             if (assignPhone.length >= 10) {
-                const message = encodeURIComponent(`Hi ${assign}, Please follow up on the pending work: ${work} for ${name}`);
+                const message = encodeURIComponent(`Hi ${assign}, Balance of Rs.${remark} pending against your complted work: ${work} for ${name}`);
                 whatsappAssigneeLink = `https://wa.me/${assignPhone}?text=${message}`;
                 assigneeDisabledAttr = '';
             }
